@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/chessboardjs/css/chessboard-0.3.0.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Chess</title>
+</head>
+<body>
+    <!--    <button onclick="startGame()">Start</button> -->
+    <div class="main">
+        <div class="index">
+            <div id="board" class="board"></div>
+            <div class="info">
+                <button onclick="computerStart()">Start</button>
+                <hr>
+                <label for="search-depthW">Depth search for White</label>
+                <select id="search-depthW">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                </select><br>
+                <label for="search-depthB">Depth search for Black</label>
+                <select id="search-depthB">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                </select><br><hr>
+                <span>Positions evaluated (white): <span id="position-countW"></span></span><br>
+                <span>Time (white): <span id="timeW"></span></span><br>
+                <span>Positions/s(white): <span id="positions-per-sW"></span> </span><br><hr>
+                <span>Positions evaluated (black): <span id="position-countB"></span></span><br>
+                <span>Time (black): <span id="timeB"></span></span><br>
+                <span>Positions/s (black): <span id="positions-per-sB"></span> </span><br>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../lib/chessjs/chess.js"></script>
+    <script src="../lib/chessboardjs/js/chessboard-0.3.0.js"></script>
+    <script src="../lib/chesspieces/chessboardjs-themes.js"></script>
+    <script src="mayvoimay.js"></script>
+</body>
+</html>

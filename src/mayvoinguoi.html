@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../lib/chessboardjs/css/chessboard-0.3.0.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Chess</title>
+</head>
+<body>
+    <!--    <button onclick="startGame()">Start</button> -->
+    <div class="main">
+        <div class="index">
+            <div id="board" class="board"></div>
+            <div class="info">
+                <button onclick="computerStart()">Start</button>
+                <hr>
+                <button onclick="undo()">Undo</button>
+                <hr>
+                Search depth:
+                <select id="search-depth">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                </select><br><hr>
+                <label for="select">Promotion</label>
+                <select id="select">
+                    <option>q</option>
+                    <option>r</option>
+                    <option>n</option>
+                    <option>b</option>
+                </select><br><hr>
+                <span>Positions evaluated: <span id="position-count"></span></span><br>
+                <span>Time: <span id="time"></span></span><br>
+                <span>Positions/s: <span id="positions-per-s"></span> </span><br>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="../lib/chessjs/chess.js"></script>
+    <script src="../lib/chessboardjs/js/chessboard-0.3.0.js"></script>
+    <script src="../lib/chesspieces/chessboardjs-themes.js"></script>
+    <script src="mayvoinguoi.js"></script>
+</body>
+</html>

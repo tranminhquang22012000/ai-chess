@@ -1,0 +1,47 @@
+
+.board {
+    width: 550px;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.info {
+    width: 200px;
+    margin: 20px 20px 0px 20px;
+    
+}
+
+.move-history {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.main {
+    background-color: white;
+    height: 625px;
+    width: max-content;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.index{
+    display: flex;
+}
+
+button{
+    font-family: sans-serif;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+    background-color: #167bff;
+    color: white;
+}
+
+
+h1{
+    color: orange;
+    margin-top: 20px;    
+}
